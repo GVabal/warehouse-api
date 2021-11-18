@@ -21,6 +21,7 @@ public class ShapePopulationComponent implements CommandLineRunner {
   private static final Logger LOG = LoggerFactory.getLogger(ShapePopulationComponent.class);
 
   private final List<String> shapeTypes = new ArrayList<>(ALLOWED_SHAPE_TYPES);
+  private final Random random = new Random();
 
   private final int amountToPopulate;
   private final ShapeService shapeService;
@@ -40,7 +41,7 @@ public class ShapePopulationComponent implements CommandLineRunner {
   }
 
   private String getRandomShapeType() {
-    return shapeTypes.get(new Random().nextInt(shapeTypes.size()));
+    return shapeTypes.get(random.nextInt(shapeTypes.size()));
   }
 
   private BigDecimal getRandomPrice() {
