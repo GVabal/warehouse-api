@@ -16,7 +16,7 @@ public class Shape {
 
   protected Shape() {}
 
-  private Shape(String type, BigDecimal price) {
+  protected Shape(String type, BigDecimal price) {
     this.type = type;
     this.price = price;
   }

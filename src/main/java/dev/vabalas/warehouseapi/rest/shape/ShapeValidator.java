@@ -13,7 +13,7 @@ import static java.lang.String.format;
 
 @Component
 public class ShapeValidator {
-  private static final Set<String> ALLOWED_SHAPE_TYPES = Set.of("ARROW", "CIRCLE", "HEART", "HEPTAGON",
+  public static final Set<String> ALLOWED_SHAPE_TYPES = Set.of("ARROW", "CIRCLE", "HEART", "HEPTAGON",
                                                                 "HEXAGON", "OCTAGON", "OVAL", "PARALLELOGRAM",
                                                                 "PENTAGON", "RECTANGLE", "RHOMBUS", "SQUARE",
                                                                 "STAR", "TRIANGLE");
